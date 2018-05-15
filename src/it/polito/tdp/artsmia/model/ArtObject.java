@@ -18,7 +18,9 @@ public class ArtObject {
 	private String room;
 	private String style;
 	private String title;
-
+	public ArtObject(int objectId) {
+		this.id=objectId;
+	}
 	public ArtObject(int objectId, String classification, String continent, 
 			String country, int curatorApproved, String dated, String department, 
 			String medium, String nationality, String objectName, int restricted, 

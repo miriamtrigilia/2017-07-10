@@ -1,0 +1,30 @@
+Obiettivo: trovare un cammino di LUN vertici, partendo dal vertice "start" 
+-cammino: vertici a due a due adiacenti
+-peso massimo
+-ogni vertice del cammino deve avere la stessa "classification" del vertice star
+
+Soluzione: (parziale)
+Lista di ArtObject
+-primo elemento è "start"
+-elementi successivi sono adiacenti
+-tutti gli elementi hanno stessa classification
+-l'ordine degli elementi è rilevante (non posso usare un Set)
+
+Soluzione totale:
+soluzione di lunghezza LUN
+
+Livello ricorsione = lunghezza della sequenza che sto creando
+
+Passo della ricorsione = aggiungere un nuovo vertice in coda alla sequenza
+
+come faccio ad aggiungerlo?
+-adiacente all'ultimo vertice della sequenza parziale
+-purche abbia la giusta classification
+-purche non faccia ancora parte della soluzione parziale (creerei un ciclo)
+
+caso terminale= soluzione ha lunghezza LUN
+-calcolare peso
+-se max, memorizzare soluzione
+-caso di max(3 scelte)---> continuo a cercare  ma non prosegue in profondita(return semplice  )
+
+caso iniziale: lista che contiente [start]
