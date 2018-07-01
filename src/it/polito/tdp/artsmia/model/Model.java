@@ -175,6 +175,8 @@ public class Model {
 				return start;
 	
 	}
+	
+	//SOLUZIONE PUNTO 2
 	public List<ArtObject> camminoMassimo(int startId, int LUN) {
 		// trova il vertice di partenza
 		ArtObject start = trovaVertice(startId);
@@ -192,7 +194,7 @@ public class Model {
 		
 	}
 
-	//SOLUZIONE PUNTO 2
+	
 	private void cerca(List<ArtObject> parziale, int livello, int LUN) {
 		if(livello==LUN) {
 			// caso terminale
